@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Myntra</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f6f6f6;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      width: 50px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .search-container {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      margin: 0 20px;
+    }
+
+    .search-container input {
+      width: 400px;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+
+    .icons {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .icons a {
+      text-decoration: none;
+      color: #333;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .icons img {
+      width: 24px;
+      display: block;
+      margin: 0 auto 4px;
+    }
+
+    /* MAIN PRODUCT GRID */
+    .main-content {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-info {
+      padding: 10px;
+    }
+
+    .product-title {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .product-price {
+      color: #555;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="myntra.png" alt="Myntra" class="logo">
+
+    <nav>
+      <a href="men.html">Men</a>
+      <a href="women.html">Women</a>
+      <a href="home.html">Home</a>
+      <a href="kids.html">Kids</a>
+      <a href="beauty.html">Beauty</a>
+      <a href="genz.html">GenZ</a>
+      <a href="studio.html">Studio</a>
+    </nav>
+
+    <div class="search-container">
+      <input type="text" placeholder="Search for products, brands and more">
+    </div>
+
+    <div class="icons">
+      <a href="profile.html">
+        <img src="https://cdn-icons-png.flaticon.com/128/747/747376.png" alt="Profile">
+        Profile
+      </a>
+      <a href="wishlist.html">
+        <img src="https://cdn-icons-png.flaticon.com/128/833/833472.png" alt="Wishlist">
+        Wishlist
+      </a>
+      <a href="bag.html">
+        <img src="https://cdn-icons-png.flaticon.com/128/1170/1170678.png" alt="Bag">
+        Bag
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <section class="main-content">
+    <!-- Product Card -->
+    <div class="product-card">
+      <a href="#">
+        <img src="cotton t-shirt.jpg" alt="Product 1">
+        <div class="product-info">
+          <p class="product-title">Cotton T-Shirt</p>
+          <p class="product-price">₹499</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="#">
+        <img src="stylish jeans.jpg" alt="Product 2">
+        <div class="product-info">
+          <p class="product-title">Stylish Jeans</p>
+          <p class="product-price">₹999</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="#">
+        <img src="casual dress.jpg" alt="Product 3">
+        <div class="product-info">
+          <p class="product-title">Casual Dress</p>
+          <p class="product-price">₹799</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="#">
+        <img src="running shoes.jpg" alt="Product 4">
+        <div class="product-info">
+          <p class="product-title">Running Shoes</p>
+          <p class="product-price">₹1299</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="#">
+        <img src="ethnic wear.jpg" alt="Product 5">
+        <div class="product-info">
+          <p class="product-title">Ethnic Wear</p>
+          <p class="product-price">₹1499</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="#">
+        <img src="watch.jpg" alt="Product 6">
+        <div class="product-info">
+          <p class="product-title">Watch</p>
+          <p class="product-price">₹2500</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="#">
+        <img src="cargo trouser.jpg" alt="Product 7">
+        <div class="product-info">
+          <p class="product-title">Cargo Trouser</p>
+          <p class="product-price">₹899</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="#">
+        <img src="bermuda shorts.jpg" alt="Product 8">
+        <div class="product-info">
+          <p class="product-title">Bermuda Shorts</p>
+          <p class="product-price">₹578</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="#">
+        <img src="oversized tees.jpg" alt="Product 9">
+        <div class="product-info">
+          <p class="product-title">Oversized Tees</p>
+          <p class="product-price">₹759</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="#">
+        <img src="baggy jeans.jpg" alt="Product 10">
+        <div class="product-info">
+          <p class="product-title">Baggy Jeans</p>
+          <p class="product-price">₹1390</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="#">
+        <img src="graphic tees.jpg" alt="Product 11">
+        <div class="product-info">
+          <p class="product-title">Graphic Tees</p>
+          <p class="product-price">₹780</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="#">
+        <img src="cotton kurta.jpg" alt="Product 12">
+        <div class="product-info">
+          <p class="product-title">Cotton Kurta</p>
+          <p class="product-price">₹450</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="#">
+        <img src="track pants.jpg" alt="Product 13">
+        <div class="product-info">
+          <p class="product-title">Track Pants</p>
+          <p class="product-price">₹920</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="#">
+        <img src="Straight Fit Joggers.webp" alt="Product 14">
+        <div class="product-info">
+          <p class="product-title">Straight Fit Joggers</p>
+          <p class="product-price">₹959</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="#">
+        <img src="Men Running Shoes.jpg" alt="Product 15">
+        <div class="product-info">
+          <p class="product-title">Men Running Shoes</p>
+          <p class="product-price">₹1299</p>
+        </div>
+      </a>
+    </div>
+
+  </section>
+
+</body>
+</html>
