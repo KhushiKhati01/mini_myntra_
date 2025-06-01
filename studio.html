@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Studio - Myntra Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    .navbar {
+      background-color: white;
+      padding: 15px 30px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      margin-right: 25px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+      color: #222;
+    }
+
+    .studio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      padding: 40px;
+    }
+
+    .studio-card {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .studio-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .studio-card h4 {
+      padding: 12px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="men.html">Men</a>
+    <a href="women.html">Women</a>
+    <a href="home.html">Home & Living</a>
+    <a href="kids.html">Kids</a>
+    <a href="beauty.html">Beauty</a>
+    <a href="genz.html">GEN Z</a>
+    <a href="studio.html">Studio</a>
+    <a href="profile.html">Profile</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="bag.html">Bag</a>
+  </div>
+
+  <!-- Section Title -->
+  <h2>Studio – Style & Stories</h2>
+
+  <!-- Studio Content Grid -->
+  <div class="studio-grid">
+    <div class="studio-card">
+      <img src="https://assets.myntassets.com/w_420,q_90/assets/images/2023/2/1/e71a0c7d-5eaa-412a-8459-89ce3e3ab48e1675235171795-Studio_1.jpg" alt="Celeb Lookbook">
+      <h4>Celebrity Style Lookbook</h4>
+    </div>
+    <div class="studio-card">
+      <img src="https://assets.myntassets.com/w_420,q_90/assets/images/2023/2/1/ba38b587-1c4c-402f-95b7-2b81ac3c04c61675235171785-Studio_2.jpg" alt="Trendy Layers">
+      <h4>Trendy Layers & Street Fits</h4>
+    </div>
+    <div class="studio-card">
+      <img src="https://assets.myntassets.com/w_420,q_90/assets/images/2023/2/1/e47e6e59-d8a4-4ed5-89b3-e2aeb4dd9fe51675235171816-Studio_4.jpg" alt="Festive Special">
+      <h4>Festive Fashion Campaign</h4>
+    </div>
+    <div class="studio-card">
+      <img src="https://assets.myntassets.com/w_420,q_90/assets/images/2023/2/1/dcb9e5f4-3524-4566-b4aa-f90aab4b3c6f1675235171807-Studio_3.jpg" alt="Exclusive Edits">
+      <h4>Editor’s Pick: Premium Wear</h4>
+    </div>
+  </div>
+
+</body>
+</html>
